@@ -13,15 +13,17 @@ def app():
 
     st.markdown("### Sample Data")
     #df = create_table()
-    #df = pd.read_json("apps/clean_jason.json") #works
 
-    with open("apps/clean_jason.json", "r") as jf:
+    # with open("apps/clean_jason.json", "r") as jf:
+    #     json_file = json.load(jf)
+
+    with open("apps/jason300.json", "r") as jf:
         json_file = json.load(jf)
+    
+    # st.dataframe(json_file[1])
 
     # adds data to dataframe, organizes, removes unwanted columns, reorder, etc
-    json_data = pd.json_normalize(json_file) # organizes data 
-    pd.set_option('display.precision', 2)
-    #pd.options.display.float_format = '{:,.2f}'.format
+    json_data = pd.json_normalize(json_file[1][49:])
     json_data.drop(json_data.columns[[0, 3, 4, 5, 6, 7, 8]], axis=1, inplace=True)
     df = json_data[json_data.columns[[2, 1, 0]]]
     df = df.rename(
