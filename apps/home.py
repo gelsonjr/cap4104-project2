@@ -8,16 +8,16 @@ import json
 def app():
     st.title('Home')
 
-    st.write("This is a sample home page in the mutliapp.")
-    st.write("See `apps/home.py` to know how to use it.")
+    #st.write("This is a sample home page in the mutliapp.")
+    #st.write("See `apps/home.py` to know how to use it.")
 
-    st.markdown("### Sample Data")
+    st.markdown("### Top 10 Most Populous Countries in the World")
     #df = create_table()
 
     # with open("apps/clean_jason.json", "r") as jf:
     #     json_file = json.load(jf)
 
-    with open("apps/jason300.json", "r") as jf:
+    with open("apps/jason2021.json", "r") as jf:
         json_file = json.load(jf)
     
     # st.dataframe(json_file[1])
@@ -39,6 +39,10 @@ def app():
 
     st.dataframe(df.style.format({'Population': '{:,.2f}'}))
 
-    st.write('Navigate to `Data Stats` page to visualize the data')
+    #st.write('Navigate to `Data Stats` page to visualize the data')
+
+    st.markdown("### Line Chart")
+
+    st.line_chart(df)
 
 
