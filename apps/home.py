@@ -13,7 +13,8 @@ API_URL = 'apps/data2021.json' # temporary, for tests
 # This method fetches data from World Bank API, and parses the JSON payload
 # to store only the relevant information (countries & populations)
 def fetch_api_data(api_url):
-    data = []
+    # data = []
+    data = {}
 
     # response = requests.get(api_url)
     # json_file = response.json()
@@ -21,20 +22,28 @@ def fetch_api_data(api_url):
     with open(api_url, "r") as jf:
         json_file = json.load(jf)
     
-    for index in range(len(json_file[1])):
-        data.append({
-            "Country": json_file[1][index]['country']['value'],
-            "Population": json_file[1][index]['value'],
-        })
+    for index in range(50, len(json_file[1])):
+        data.update(
+            {json_file[1][index]['country']['value']: json_file[1][index]['value']}
+        )
+
+    # for index in range(len(json_file[1])):
+    #     data.append({
+    #         json_file[1][index]['country']['value']: json_file[1][index]['value']
+    #         # "Country": json_file[1][index]['country']['value'],
+    #         # "Population": json_file[1][index]['value'],
+    #     })
     
-    data = data[49:] # The first 49 elements from the data set are not countries
+    # data = data[49:] # The first 49 elements from the data set are not countries
 
     return data
 
 # This method creates a pandas dataframe based on data fetched from World Bank API
 def create_dataframe(api_data):
-    dataframe = pd.DataFrame(data=api_data)
-    #dataframe = dataframe[dataframe.columns[[1, 2, 3]]]
+    # dataframe = pd.DataFrame(data=api_data)
+    dataframe = pd.DataFrame(
+        {'Country': api_data.keys(), 'Population': api_data.values()}
+    )
     dataframe = dataframe.sort_values(by='Population', ascending=False, ignore_index=True)[:10]
     dataframe.index += 1
     dataframe = dataframe.style.format(
@@ -68,8 +77,8 @@ def app():
 
 
     st.dataframe(dataframe_2021)
-    st.dataframe(dataframe_2011)
-    st.dataframe(dataframe_2001)
+    #st.dataframe(dataframe_2011)
+    #st.dataframe(dataframe_2001)
     #st.dataframe(df2020)
 
     #st.write('Navigate to `Data Stats` page to visualize the data')

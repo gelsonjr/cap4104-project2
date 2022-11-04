@@ -21,16 +21,21 @@ url = 'tests/data2021_api.json'
 with open(url, "r") as jf:
     json_file = json.load(jf)
 
-data_2021 = []
+data_2021 = {}
 
-for index in range(len(json_file[1])):
-    data_2021.append({
-        "Country": json_file[1][index]['country']['value'],
-        "Population": json_file[1][index]['value'],
-        # "Year": json_file[1][index]['date']
-    })
+for index in range(50, len(json_file[1])):
+    data_2021.update(
+        {json_file[1][index]['country']['value']: json_file[1][index]['value']}
+    )
+    # data_2021.append({
+    #     json_file[1][index]['country']['value']: json_file[1][index]['value']
+    #     # "Country": json_file[1][index]['country']['value'],
+    #     # "Population": json_file[1][index]['value'],
+    #     # "Year": json_file[1][index]['date']
+    # })
 
-print(data_2021[49:])
+
+print(data_2021)
 
 # print(json_file[1][1]['country']['id'])
 # print(json_file[1][1]['country']['value'])
