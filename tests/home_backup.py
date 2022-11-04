@@ -7,42 +7,39 @@ import json
 import altair as alt
 import matplotlib.pyplot as plt
 
+# To fetch data from World Bank API
 # API_URL = 'https://api.worldbank.org/v2/en/country/all/indicator/SP.POP.TOTL?format=json&date=2019:2021&per_page=798'
-API_URL = 'apps/data2021.json' # temporary, for tests
+API_URL = 'apps/data2019_2021.json' # temp
 
-# This method fetches data from World Bank API, and parses the JSON payload
-# to store only the relevant information (countries & populations)
 def fetch_api_data(api_url):
-    data = []
+        dataset = []
 
-    # response = requests.get(api_url)
-    # json_file = response.json()
+        # response = requests.get(api_url)
+        # json_file = response.json()
 
-    with open(api_url, "r") as jf:
-        json_file = json.load(jf)
-    
-    for index in range(len(json_file[1])):
-        data.append({
-            "Country": json_file[1][index]['country']['value'],
-            "Population": json_file[1][index]['value'],
+        with open(api_url, "r") as jf:
+            json_file = json.load(jf)
+        
+        for index in range(0, len(json_file[1]) - 2, 3):
+            dataset.append({
+                'Code': json_file[1][index]['country']['id'],
+                'Country': json_file[1][index]['country']['value'],
+                'Population in 2019': json_file[1][index + 2]['value'],
+                'Population in 2020': json_file[1][index + 1]['value'],
+                'Population in 2021': json_file[1][index]['value'],
+            })
+
+        df = pd.DataFrame(data=dataset[49:])
+        df = df[df.columns[[1, 2, 3, 4]]]
+        df = df.sort_values(by='Population in 2021', ascending=False, ignore_index=True)[:10]
+        df.index += 1
+        df = df.style.format(precision=2, thousands=",", formatter={(
+            'Population in 2019',
+            'Population in 2020',
+            'Population in 2021'): '{:,.2f}'
         })
-    
-    data = data[49:] # The first 49 elements from the data set are not countries
-
-    return data
-
-# This method creates a pandas dataframe based on data fetched from World Bank API
-def create_dataframe(api_data):
-    dataframe = pd.DataFrame(data=api_data)
-    #dataframe = dataframe[dataframe.columns[[1, 2, 3]]]
-    dataframe = dataframe.sort_values(by='Population', ascending=False, ignore_index=True)[:10]
-    dataframe.index += 1
-    dataframe = dataframe.style.format(
-        precision=2, thousands=",", formatter={('Population'): '{:,.2f}'}
-    )
-
-    return dataframe
-
+        
+        return df
 
 def app():
     st.title('Home')
@@ -56,20 +53,13 @@ def app():
     # url2021 = 'apps/jason2021.json'
     # url2020 = 'apps/jason2020.json'
     
-    api_data_2021 = fetch_api_data('apps/data2021.json')
-    dataframe_2021 = create_dataframe(api_data_2021)
-
-    api_data_2011 = fetch_api_data('apps/data2011.json')
-    dataframe_2011 = create_dataframe(api_data_2011)
-
-    api_data_2001 = fetch_api_data('apps/data2001.json')
-    dataframe_2001 = create_dataframe(api_data_2001)
+    
+    df = fetch_api_data(API_URL)
+    #df2020 = fetch_api_data(url2020)
 
 
 
-    st.dataframe(dataframe_2021)
-    st.dataframe(dataframe_2011)
-    st.dataframe(dataframe_2001)
+    st.dataframe(df)
     #st.dataframe(df2020)
 
     #st.write('Navigate to `Data Stats` page to visualize the data')
@@ -93,7 +83,6 @@ def app():
     chart_data = pd.DataFrame(data=y, index=x)
     st.bar_chart(chart_data)
     ######################################
-    st.markdown("### Line Chart: Country Population Growth Since 2001")
 
     z = {
         '2021': [1412000000, 1393000000, 331800000, 276000000, 225000000, 213999000, 211000000, 166000000, 143000000, 130000000],

@@ -16,32 +16,19 @@ import json
 
 # data = str(data[1][49:])[1:-1] #Maybe?
 
-#print(dataTrimmed)
-# print(json_data)
-#pprint(data[0][0])
-#print(text1)
-#print("Hello")
 
-url = 'tests/data2019_2021.json'
+url = 'tests/data2021_api.json'
 with open(url, "r") as jf:
     json_file = json.load(jf)
 
 data_2021 = []
 
-# for country_code, name, population, year in json_file.items():
-#     print
-
-#print(json_file[1])
-for index in range(0, len(json_file[1]) - 2, 3):
+for index in range(len(json_file[1])):
     data_2021.append({
         "Country": json_file[1][index]['country']['value'],
-        "Code": json_file[1][index]['country']['id'],
-        "Population in 2019": json_file[1][index + 2]['value'],
-        "Population in 2020": json_file[1][index + 1]['value'],
-        "Population in 2021": json_file[1][index]['value'],
-        #"Year": json_file[1][index]['date'],
+        "Population": json_file[1][index]['value'],
+        # "Year": json_file[1][index]['date']
     })
-    print("index: ", index)
 
 print(data_2021[49:])
 
