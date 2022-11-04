@@ -1,0 +1,1613 @@
+[
+    {
+        "page": 1,
+        "pages": 8,
+        "per_page": 100,
+        "total": 798,
+        "sourceid": "2",
+        "sourcename": "World Development Indicators",
+        "lastupdated": "2022-09-16"
+    },
+    [
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "ZH",
+                "value": "Africa Eastern and Southern"
+            },
+            "countryiso3code": "AFE",
+            "date": "2021",
+            "value": 694665117,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "ZH",
+                "value": "Africa Eastern and Southern"
+            },
+            "countryiso3code": "AFE",
+            "date": "2020",
+            "value": 677243299,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "ZH",
+                "value": "Africa Eastern and Southern"
+            },
+            "countryiso3code": "AFE",
+            "date": "2019",
+            "value": 660046272,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "ZI",
+                "value": "Africa Western and Central"
+            },
+            "countryiso3code": "AFW",
+            "date": "2021",
+            "value": 470898870,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "ZI",
+                "value": "Africa Western and Central"
+            },
+            "countryiso3code": "AFW",
+            "date": "2020",
+            "value": 458803476,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "ZI",
+                "value": "Africa Western and Central"
+            },
+            "countryiso3code": "AFW",
+            "date": "2019",
+            "value": 446911598,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "1A",
+                "value": "Arab World"
+            },
+            "countryiso3code": "ARB",
+            "date": "2021",
+            "value": 444517783,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "1A",
+                "value": "Arab World"
+            },
+            "countryiso3code": "ARB",
+            "date": "2020",
+            "value": 436080728,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "1A",
+                "value": "Arab World"
+            },
+            "countryiso3code": "ARB",
+            "date": "2019",
+            "value": 427870273,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "S3",
+                "value": "Caribbean small states"
+            },
+            "countryiso3code": "CSS",
+            "date": "2021",
+            "value": 7481631,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "S3",
+                "value": "Caribbean small states"
+            },
+            "countryiso3code": "CSS",
+            "date": "2020",
+            "value": 7442291,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "S3",
+                "value": "Caribbean small states"
+            },
+            "countryiso3code": "CSS",
+            "date": "2019",
+            "value": 7401389,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "B8",
+                "value": "Central Europe and the Baltics"
+            },
+            "countryiso3code": "CEB",
+            "date": "2021",
+            "value": 101669618,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "B8",
+                "value": "Central Europe and the Baltics"
+            },
+            "countryiso3code": "CEB",
+            "date": "2020",
+            "value": 102172351,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "B8",
+                "value": "Central Europe and the Baltics"
+            },
+            "countryiso3code": "CEB",
+            "date": "2019",
+            "value": 102398494,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "V2",
+                "value": "Early-demographic dividend"
+            },
+            "countryiso3code": "EAR",
+            "date": "2021",
+            "value": 3373866849,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "V2",
+                "value": "Early-demographic dividend"
+            },
+            "countryiso3code": "EAR",
+            "date": "2020",
+            "value": 3332103561,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "V2",
+                "value": "Early-demographic dividend"
+            },
+            "countryiso3code": "EAR",
+            "date": "2019",
+            "value": 3290291029,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "Z4",
+                "value": "East Asia & Pacific"
+            },
+            "countryiso3code": "EAS",
+            "date": "2021",
+            "value": 2368622859,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "Z4",
+                "value": "East Asia & Pacific"
+            },
+            "countryiso3code": "EAS",
+            "date": "2020",
+            "value": 2361517682,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "Z4",
+                "value": "East Asia & Pacific"
+            },
+            "countryiso3code": "EAS",
+            "date": "2019",
+            "value": 2351127942,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "4E",
+                "value": "East Asia & Pacific (excluding high income)"
+            },
+            "countryiso3code": "EAP",
+            "date": "2021",
+            "value": 2122086315,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "4E",
+                "value": "East Asia & Pacific (excluding high income)"
+            },
+            "countryiso3code": "EAP",
+            "date": "2020",
+            "value": 2114009483,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "4E",
+                "value": "East Asia & Pacific (excluding high income)"
+            },
+            "countryiso3code": "EAP",
+            "date": "2019",
+            "value": 2103723076,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "T4",
+                "value": "East Asia & Pacific (IDA & IBRD countries)"
+            },
+            "countryiso3code": "TEA",
+            "date": "2021",
+            "value": 2096155040,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "T4",
+                "value": "East Asia & Pacific (IDA & IBRD countries)"
+            },
+            "countryiso3code": "TEA",
+            "date": "2020",
+            "value": 2088186305,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "T4",
+                "value": "East Asia & Pacific (IDA & IBRD countries)"
+            },
+            "countryiso3code": "TEA",
+            "date": "2019",
+            "value": 2078012370,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XC",
+                "value": "Euro area"
+            },
+            "countryiso3code": "EMU",
+            "date": "2021",
+            "value": 342566541,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XC",
+                "value": "Euro area"
+            },
+            "countryiso3code": "EMU",
+            "date": "2020",
+            "value": 342708355,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XC",
+                "value": "Euro area"
+            },
+            "countryiso3code": "EMU",
+            "date": "2019",
+            "value": 342283354,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "Z7",
+                "value": "Europe & Central Asia"
+            },
+            "countryiso3code": "ECS",
+            "date": "2021",
+            "value": 923753699,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "Z7",
+                "value": "Europe & Central Asia"
+            },
+            "countryiso3code": "ECS",
+            "date": "2020",
+            "value": 922976036,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "Z7",
+                "value": "Europe & Central Asia"
+            },
+            "countryiso3code": "ECS",
+            "date": "2019",
+            "value": 920807612,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "7E",
+                "value": "Europe & Central Asia (excluding high income)"
+            },
+            "countryiso3code": "ECA",
+            "date": "2021",
+            "value": 401828885,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "7E",
+                "value": "Europe & Central Asia (excluding high income)"
+            },
+            "countryiso3code": "ECA",
+            "date": "2020",
+            "value": 400895993,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "7E",
+                "value": "Europe & Central Asia (excluding high income)"
+            },
+            "countryiso3code": "ECA",
+            "date": "2019",
+            "value": 399386100,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "T7",
+                "value": "Europe & Central Asia (IDA & IBRD countries)"
+            },
+            "countryiso3code": "TEC",
+            "date": "2021",
+            "value": 462624055,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "T7",
+                "value": "Europe & Central Asia (IDA & IBRD countries)"
+            },
+            "countryiso3code": "TEC",
+            "date": "2020",
+            "value": 462100263,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "T7",
+                "value": "Europe & Central Asia (IDA & IBRD countries)"
+            },
+            "countryiso3code": "TEC",
+            "date": "2019",
+            "value": 460788476,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "EU",
+                "value": "European Union"
+            },
+            "countryiso3code": "EUU",
+            "date": "2021",
+            "value": 446946712,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "EU",
+                "value": "European Union"
+            },
+            "countryiso3code": "EUU",
+            "date": "2020",
+            "value": 447479493,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "EU",
+                "value": "European Union"
+            },
+            "countryiso3code": "EUU",
+            "date": "2019",
+            "value": 447197811,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "F1",
+                "value": "Fragile and conflict affected situations"
+            },
+            "countryiso3code": "FCS",
+            "date": "2021",
+            "value": 982980816,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "F1",
+                "value": "Fragile and conflict affected situations"
+            },
+            "countryiso3code": "FCS",
+            "date": "2020",
+            "value": 960960554,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "F1",
+                "value": "Fragile and conflict affected situations"
+            },
+            "countryiso3code": "FCS",
+            "date": "2019",
+            "value": 940026046,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XE",
+                "value": "Heavily indebted poor countries (HIPC)"
+            },
+            "countryiso3code": "HPC",
+            "date": "2021",
+            "value": 845522272,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XE",
+                "value": "Heavily indebted poor countries (HIPC)"
+            },
+            "countryiso3code": "HPC",
+            "date": "2020",
+            "value": 823480038,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XE",
+                "value": "Heavily indebted poor countries (HIPC)"
+            },
+            "countryiso3code": "HPC",
+            "date": "2019",
+            "value": 801708019,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XD",
+                "value": "High income"
+            },
+            "countryiso3code": "",
+            "date": "2021",
+            "value": 1241374277,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XD",
+                "value": "High income"
+            },
+            "countryiso3code": "",
+            "date": "2020",
+            "value": 1240684527,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XD",
+                "value": "High income"
+            },
+            "countryiso3code": "",
+            "date": "2019",
+            "value": 1234830048,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XF",
+                "value": "IBRD only"
+            },
+            "countryiso3code": "IBD",
+            "date": "2021",
+            "value": 4895295243,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XF",
+                "value": "IBRD only"
+            },
+            "countryiso3code": "IBD",
+            "date": "2020",
+            "value": 4862446431,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XF",
+                "value": "IBRD only"
+            },
+            "countryiso3code": "IBD",
+            "date": "2019",
+            "value": 4826259460,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "ZT",
+                "value": "IDA & IBRD total"
+            },
+            "countryiso3code": "IBT",
+            "date": "2021",
+            "value": 6642614110,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "ZT",
+                "value": "IDA & IBRD total"
+            },
+            "countryiso3code": "IBT",
+            "date": "2020",
+            "value": 6571053159,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "ZT",
+                "value": "IDA & IBRD total"
+            },
+            "countryiso3code": "IBT",
+            "date": "2019",
+            "value": 6496952025,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XH",
+                "value": "IDA blend"
+            },
+            "countryiso3code": "IDB",
+            "date": "2021",
+            "value": 586883422,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XH",
+                "value": "IDA blend"
+            },
+            "countryiso3code": "IDB",
+            "date": "2020",
+            "value": 574159138,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XH",
+                "value": "IDA blend"
+            },
+            "countryiso3code": "IDB",
+            "date": "2019",
+            "value": 561571929,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XI",
+                "value": "IDA only"
+            },
+            "countryiso3code": "IDX",
+            "date": "2021",
+            "value": 1160435445,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XI",
+                "value": "IDA only"
+            },
+            "countryiso3code": "IDX",
+            "date": "2020",
+            "value": 1134447590,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XI",
+                "value": "IDA only"
+            },
+            "countryiso3code": "IDX",
+            "date": "2019",
+            "value": 1109120636,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XG",
+                "value": "IDA total"
+            },
+            "countryiso3code": "IDA",
+            "date": "2021",
+            "value": 1747318867,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XG",
+                "value": "IDA total"
+            },
+            "countryiso3code": "IDA",
+            "date": "2020",
+            "value": 1708606728,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XG",
+                "value": "IDA total"
+            },
+            "countryiso3code": "IDA",
+            "date": "2019",
+            "value": 1670692565,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "V3",
+                "value": "Late-demographic dividend"
+            },
+            "countryiso3code": "LTE",
+            "date": "2021",
+            "value": 2322070390,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "V3",
+                "value": "Late-demographic dividend"
+            },
+            "countryiso3code": "LTE",
+            "date": "2020",
+            "value": 2316803603,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "V3",
+                "value": "Late-demographic dividend"
+            },
+            "countryiso3code": "LTE",
+            "date": "2019",
+            "value": 2308520840,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "ZJ",
+                "value": "Latin America & Caribbean"
+            },
+            "countryiso3code": "LCN",
+            "date": "2021",
+            "value": 658089208,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "ZJ",
+                "value": "Latin America & Caribbean"
+            },
+            "countryiso3code": "LCN",
+            "date": "2020",
+            "value": 652365260,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "ZJ",
+                "value": "Latin America & Caribbean"
+            },
+            "countryiso3code": "LCN",
+            "date": "2019",
+            "value": 646431661,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XJ",
+                "value": "Latin America & Caribbean (excluding high income)"
+            },
+            "countryiso3code": "LAC",
+            "date": "2021",
+            "value": 596217644,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XJ",
+                "value": "Latin America & Caribbean (excluding high income)"
+            },
+            "countryiso3code": "LAC",
+            "date": "2020",
+            "value": 590928198,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XJ",
+                "value": "Latin America & Caribbean (excluding high income)"
+            },
+            "countryiso3code": "LAC",
+            "date": "2019",
+            "value": 585257302,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "T2",
+                "value": "Latin America & the Caribbean (IDA & IBRD countries)"
+            },
+            "countryiso3code": "TLA",
+            "date": "2021",
+            "value": 642239838,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "T2",
+                "value": "Latin America & the Caribbean (IDA & IBRD countries)"
+            },
+            "countryiso3code": "TLA",
+            "date": "2020",
+            "value": 636492840,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "T2",
+                "value": "Latin America & the Caribbean (IDA & IBRD countries)"
+            },
+            "countryiso3code": "TLA",
+            "date": "2019",
+            "value": 630644771,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XL",
+                "value": "Least developed countries: UN classification"
+            },
+            "countryiso3code": "LDC",
+            "date": "2021",
+            "value": 1081504804,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XL",
+                "value": "Least developed countries: UN classification"
+            },
+            "countryiso3code": "LDC",
+            "date": "2020",
+            "value": 1057131013,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XL",
+                "value": "Least developed countries: UN classification"
+            },
+            "countryiso3code": "LDC",
+            "date": "2019",
+            "value": 1033088986,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XO",
+                "value": "Low & middle income"
+            },
+            "countryiso3code": "LMY",
+            "date": "2021",
+            "value": 6566551568,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XO",
+                "value": "Low & middle income"
+            },
+            "countryiso3code": "LMY",
+            "date": "2020",
+            "value": 6494812232,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XO",
+                "value": "Low & middle income"
+            },
+            "countryiso3code": "LMY",
+            "date": "2019",
+            "value": 6420460567,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XM",
+                "value": "Low income"
+            },
+            "countryiso3code": "",
+            "date": "2021",
+            "value": 701926973,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XM",
+                "value": "Low income"
+            },
+            "countryiso3code": "",
+            "date": "2020",
+            "value": 683532991,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XM",
+                "value": "Low income"
+            },
+            "countryiso3code": "",
+            "date": "2019",
+            "value": 665731857,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XN",
+                "value": "Lower middle income"
+            },
+            "countryiso3code": "",
+            "date": "2021",
+            "value": 3363196656,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XN",
+                "value": "Lower middle income"
+            },
+            "countryiso3code": "",
+            "date": "2020",
+            "value": 3318682068,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XN",
+                "value": "Lower middle income"
+            },
+            "countryiso3code": "",
+            "date": "2019",
+            "value": 3274021191,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "ZQ",
+                "value": "Middle East & North Africa"
+            },
+            "countryiso3code": "MEA",
+            "date": "2021",
+            "value": 472494995,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "ZQ",
+                "value": "Middle East & North Africa"
+            },
+            "countryiso3code": "MEA",
+            "date": "2020",
+            "value": 464542370,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "ZQ",
+                "value": "Middle East & North Africa"
+            },
+            "countryiso3code": "MEA",
+            "date": "2019",
+            "value": 456709496,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XQ",
+                "value": "Middle East & North Africa (excluding high income)"
+            },
+            "countryiso3code": "MNA",
+            "date": "2021",
+            "value": 403051615,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XQ",
+                "value": "Middle East & North Africa (excluding high income)"
+            },
+            "countryiso3code": "MNA",
+            "date": "2020",
+            "value": 396147843,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XQ",
+                "value": "Middle East & North Africa (excluding high income)"
+            },
+            "countryiso3code": "MNA",
+            "date": "2019",
+            "value": 389457075,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "T3",
+                "value": "Middle East & North Africa (IDA & IBRD countries)"
+            },
+            "countryiso3code": "TMN",
+            "date": "2021",
+            "value": 398128866,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "T3",
+                "value": "Middle East & North Africa (IDA & IBRD countries)"
+            },
+            "countryiso3code": "TMN",
+            "date": "2020",
+            "value": 391344574,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "T3",
+                "value": "Middle East & North Africa (IDA & IBRD countries)"
+            },
+            "countryiso3code": "TMN",
+            "date": "2019",
+            "value": 384771769,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "SP.POP.TOTL",
+                "value": "Population, total"
+            },
+            "country": {
+                "id": "XP",
+                "value": "Middle income"
+            },
+            "countryiso3code": "MIC",
+            "date": "2021",
+            "value": 5864624595,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        }
+    ]
+]
