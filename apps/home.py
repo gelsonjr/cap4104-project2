@@ -33,15 +33,6 @@ def fetch_api_data(api_url):
             {json_file[1][index]['country']['value']: json_file[1][index]['value']}
         )
 
-    # for index in range(len(json_file[1])):
-    #     data.append({
-    #         json_file[1][index]['country']['value']: json_file[1][index]['value']
-    #         # "Country": json_file[1][index]['country']['value'],
-    #         # "Population": json_file[1][index]['value'],
-    #     })
-    
-    # data = data[49:] # The first 49 elements from the data set are not countries
-
     return data
 
 # This method creates a pandas dataframe based on data fetched from World Bank API
@@ -57,7 +48,6 @@ def create_dataframe(api_data):
     # )
 
     return dataframe
-
 
 def app():
     data_2001 = fetch_api_data(API_URL_2001_DATA)
@@ -77,32 +67,8 @@ def app():
     #st.write("See `apps/home.py` to know how to use it.")
 
     st.markdown("### Top 10 Most Populous Countries in the World")
-    #df = create_table()
-
-    # url2021 = 'apps/jason2021.json'
-    # url2020 = 'apps/jason2020.json'
-    
-    # api_data_2021 = fetch_api_data('apps/data2021.json')
-    # dataframe_2021 = create_dataframe(api_data_2021)
-
-    # api_data_2011 = fetch_api_data('apps/data2011.json')
-    # dataframe_2011 = create_dataframe(api_data_2011)
-
-    # api_data_2001 = fetch_api_data('apps/data2001.json')
-    # dataframe_2001 = create_dataframe(api_data_2001)
 
     st.dataframe(df.style.format(subset=['Population'], formatter='{:,.2f}'))
-
-    #st.dataframe(dataframe_2011)
-    #st.dataframe(dataframe_2001)
-    #st.dataframe(df2020)
-
-    #st.write('Navigate to `Data Stats` page to visualize the data')
-
-    #st.markdown("### Line Chart")
-    #st.line_chart(df)
-
-    #bar_chart_data = df[df.columns[[1, 2]]]
 
     ######################################
     st.markdown("### Bar Chart: Country Population")
@@ -114,16 +80,6 @@ def app():
         'Population in 2021': population_2021
     }
 
-    # y = {
-    #     '2021': [1412000000, 1393000000, 331800000, 276000000, 225000000, 213999000, 211000000, 166000000, 143000000, 130000000]
-    #     # '2020': [1411000000, 1380000000, 331000000, 273000000, 220000000, 212000000, 206000000, 164000000, 144000000, 128000000],
-    #     # '2019': [1407000000, 1366000000, 328000000, 270000000, 216000000, 211000000, 200000000, 163000000, 144000000, 127000000]
-    # } 
-    # x = [
-    #     'China', 'India', 'United States', 'Indonesia', 'Pakistan',
-    #     'Brazil', 'Nigeria', 'Bangladesh', 'Russian Federation', 'Mexico'
-    # ]
-    # chart_data = pd.DataFrame(data=y_axis, index=x_axis)
     bar_chart_data = pd.DataFrame(
         data={'Population in 2021': population_2021},
         index=countries_list
@@ -133,12 +89,6 @@ def app():
     ######################################
     st.markdown("### Line Chart: Country Population Growth Since 2001")
 
-    z = {
-        '2021': [1412000000, 1393000000, 331800000, 276000000, 225000000, 213999000, 211000000, 166000000, 143000000, 130000000],
-        '2020': [1411000000, 1380000000, 331000000, 273000000, 220000000, 212000000, 206000000, 164000000, 144000000, 128000000],
-        '2019': [1407000000, 1366000000, 328000000, 270000000, 216000000, 211000000, 200000000, 163000000, 144000000, 127000000]
-    } 
-    # line_chart_data = pd.DataFrame(data=z, index=x)
     line_chart_data = pd.DataFrame(
         data={
             '2001': population_2001,
@@ -147,26 +97,3 @@ def app():
         },
         index=countries_list)
     st.line_chart(line_chart_data)
-
-
-
-
-
-    # Matplotlib test
-    # st.markdown("### Pyplot")
-    # x = np.arange(5)
-    # y1 = [34, 56, 12, 89, 67]
-    # y2 = [12, 56, 78, 45, 90]
-    # y3 = [14, 23, 45, 25, 89]
-    # width = 0.2
-    # # plot data in grouped manner of bar type
-    # plt.bar(x-0.2, y1, width, color='cyan')
-    # plt.bar(x, y2, width, color='orange')
-    # plt.bar(x+0.2, y3, width, color='green')
-    # plt.xticks(x, ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'])
-    # plt.xlabel("Teams")
-    # plt.ylabel("Scores")
-    # plt.legend(["Round 1", "Round 2", "Round 3"])
-    # st.pyplot(plt)
-    #plt.show()
-
