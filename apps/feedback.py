@@ -2,6 +2,11 @@ import streamlit as st
 import pandas as pd
 import csv
 
+# CAP 4104 | Fall 2022 | Project #2 - UI/UX Design with Streamlit
+# Gelson Cardoso Jr | PID: 6277187
+# George Guardia | PID: 6119740
+# Naor Vidal | PID: 6263881
+
 # ----------------------- FEEDBACK SECTION --------------------------
 # This section accepts feedback from the user and their comments are
 # displayed after submission
@@ -33,11 +38,8 @@ def app():
         # Prints the comment section
         st.subheader("Comments:")
         df = pd.DataFrame(
-           comment_section_data,
-           columns = ['NAME', 'AGE', 'COMMENT', 'DATE']
+            comment_section_data,
+            columns = ['NAME', 'AGE', 'COMMENT', 'DATE']
         )
         st.success("Thank you for the feedback!")
         st.dataframe(df)
-
-
-
