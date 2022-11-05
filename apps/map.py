@@ -1,6 +1,9 @@
 import streamlit as st
-import numpy as np
 import pandas as pd
+
+# ----------------------- MAP SECTION --------------------------
+# This section displays the map location of the 10 most populous
+# countries in the world
 
 def app():
     st.title('Map')

@@ -69,6 +69,7 @@ def app():
     st.markdown("### Top 10 Most Populous Countries in the World")
 
     st.dataframe(df.style.format(subset=['Population'], formatter='{:,.2f}'))
+    st.info("Data Source: World Bank - Population, total. www.worldbank.org")
 
     ######################################
     st.markdown("### Bar Chart: Country Population")
@@ -95,5 +96,9 @@ def app():
             '2011': population_2011,
             '2021': population_2021
         },
-        index=countries_list)
-    st.line_chart(line_chart_data)
+        index=countries_list
+    )
+
+    display_line_chart = st.checkbox('Display Country Population Growth Chart', value=True)
+    if display_line_chart:
+        st.line_chart(line_chart_data)
