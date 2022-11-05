@@ -19,7 +19,7 @@ class Navigation:
 
     def run(self):
         app = st.sidebar.radio(
-            'Go To',
+            'NAVIGATION',
             self.apps,
             format_func=lambda app: app['title']
         )
