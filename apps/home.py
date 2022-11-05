@@ -46,14 +46,23 @@ def create_dataframe(api_data):
     )
     dataframe = dataframe.sort_values(by='Population', ascending=False, ignore_index=True)[:10]
     dataframe.index += 1
-    dataframe = dataframe.style.format(
-        precision=2, thousands=",", formatter={('Population'): '{:,.2f}'}
-    )
+    # dataframe = dataframe.style.format(
+    #     precision=2, thousands=",", formatter={('Population'): '{:,.2f}'}
+    # )
 
     return dataframe
 
 
 def app():
+    api_data_2021 = fetch_api_data('apps/data2021.json')
+    api_data_2011 = fetch_api_data('apps/data2011.json')
+    api_data_2001 = fetch_api_data('apps/data2001.json')
+    df = create_dataframe(api_data_2021)
+
+    dataList2021 = df['Country'].tolist()
+    dataList2011 = [api_data_2011[keys] for keys in dataList2021]
+    dataList2001 = [api_data_2001[keys] for keys in dataList2021]
+
     st.title('Home')
 
     #st.write("This is a sample home page in the mutliapp.")
@@ -65,18 +74,20 @@ def app():
     # url2021 = 'apps/jason2021.json'
     # url2020 = 'apps/jason2020.json'
     
-    api_data_2021 = fetch_api_data('apps/data2021.json')
-    dataframe_2021 = create_dataframe(api_data_2021)
+    # api_data_2021 = fetch_api_data('apps/data2021.json')
+    # dataframe_2021 = create_dataframe(api_data_2021)
 
-    api_data_2011 = fetch_api_data('apps/data2011.json')
-    dataframe_2011 = create_dataframe(api_data_2011)
+    # api_data_2011 = fetch_api_data('apps/data2011.json')
+    # dataframe_2011 = create_dataframe(api_data_2011)
 
-    api_data_2001 = fetch_api_data('apps/data2001.json')
-    dataframe_2001 = create_dataframe(api_data_2001)
+    # api_data_2001 = fetch_api_data('apps/data2001.json')
+    # dataframe_2001 = create_dataframe(api_data_2001)
 
 
 
-    st.dataframe(dataframe_2021)
+    st.dataframe(df.style.format(
+         precision=2, thousands=",", formatter={('Population'): '{:,.2f}'}
+     ))
     #st.dataframe(dataframe_2011)
     #st.dataframe(dataframe_2001)
     #st.dataframe(df2020)
