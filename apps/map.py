@@ -6,12 +6,6 @@ import pandas as pd
 # countries in the world
 
 def app():
-    st.title('Map')
-
-    st.write("This is a sample data stats in the mutliapp.")
-
-    st.markdown("### Map")
-
     coordinates = [
         [35.8617, 104.1954],  # China
         [20.5937, 78.9629],   # India
@@ -25,9 +19,11 @@ def app():
         [23, -102]            # Mexico
     ]
 
+    st.title('Map')
+
+    st.markdown("### Location of the 10 most populous countries in the world")
     world_map = pd.DataFrame(
         coordinates, 
         columns = ['lat', 'lon']
     )
-
     st.map(world_map, zoom=1)

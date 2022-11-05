@@ -8,6 +8,8 @@ import csv
 
 def app():
     st.title("Feedback")
+    st.markdown("### Please leave us your feedback!")
+
     name = st.text_input('Name:')
     age = st.number_input('Age:', value=18)
     date = st.date_input('Today\'s Date')

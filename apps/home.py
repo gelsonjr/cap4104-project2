@@ -4,8 +4,15 @@ import numpy as np
 import requests
 import json
 
-import altair as alt
-import matplotlib.pyplot as plt
+# CAP 4104 | Fall 2022 | Project #2 - UI/UX Design with Streamlit
+# Gelson Cardoso Jr | PID: 6277187
+# George Guardia | PID: 6119740
+# Naor Vidal | PID: 
+
+
+# ----------------------- MAIN SECTION --------------------------
+# This section displays the 10 most populous countries in the world,
+# along with their population and growth since 2001 
 
 API_URL_2021_DATA = 'apps/data2021.json'
 API_URL_2011_DATA = 'apps/data2011.json'
@@ -19,7 +26,6 @@ API_URL_2001_DATA = 'apps/data2001.json'
 # This method fetches data from World Bank API, and parses the JSON payload
 # to store only the relevant information (countries & populations)
 def fetch_api_data(api_url):
-    # data = []
     data = {}
 
     # response = requests.get(api_url)
@@ -28,24 +34,21 @@ def fetch_api_data(api_url):
     with open(api_url, "r") as jf:
         json_file = json.load(jf)
     
+    # Parsing JSON payload into a clean, {Country: Population} dictionary
     for index in range(50, len(json_file[1])):
-        data.update(
-            {json_file[1][index]['country']['value']: json_file[1][index]['value']}
-        )
+        data.update({
+            json_file[1][index]['country']['value']: json_file[1][index]['value']
+        })
 
     return data
 
 # This method creates a pandas dataframe based on data fetched from World Bank API
 def create_dataframe(api_data):
-    # dataframe = pd.DataFrame(data=api_data)
     dataframe = pd.DataFrame(
         {'Country': api_data.keys(), 'Population': api_data.values()}
     )
     dataframe = dataframe.sort_values(by='Population', ascending=False, ignore_index=True)[:10]
     dataframe.index += 1
-    # dataframe = dataframe.style.format(
-    #     precision=2, thousands=",", formatter={('Population'): '{:,.2f}'}
-    # )
 
     return dataframe
 
@@ -63,33 +66,31 @@ def app():
 
     st.title('Home')
 
-    #st.write("This is a sample home page in the mutliapp.")
-    #st.write("See `apps/home.py` to know how to use it.")
+    display_students = st.checkbox('Student Information')
+    if display_students:
+        st.text_area(
+            'CAP 4104 | Fall 2022 | Project #2 - UI/UX Design with Streamlit',
+            '''Gelson Cardoso Jr | PID: 6277187\nGeorge Guardia | PID: 6119740\nNaor Vidal | PID: '''
+        )      
 
+    # ----------------------- INTERACTIVE TABLE --------------------------
     st.markdown("### Top 10 Most Populous Countries in the World")
+    st.dataframe(df.style.format(subset=['Population'], formatter='{:,.2f}'), use_container_width=True)
+    st.info("Data Source: World Bank - Population, total. www.worldbank.org (2021)")
 
-    st.dataframe(df.style.format(subset=['Population'], formatter='{:,.2f}'))
-    st.info("Data Source: World Bank - Population, total. www.worldbank.org")
-
-    ######################################
-    st.markdown("### Bar Chart: Country Population")
-
-    x_axis = countries_list
-    y_axis = {
-        # 'Population in  2001': population_2001,
-        # 'Population in  2011': population_2011,
-        'Population in 2021': population_2021
-    }
-
+    # ----------------------- BAR CHART --------------------------
+    st.markdown("### Country Population Comparasion")
     bar_chart_data = pd.DataFrame(
-        data={'Population in 2021': population_2021},
+        data={
+            'Population in 2021': population_2021
+        },
         index=countries_list
     )
     st.bar_chart(bar_chart_data)
+    st.info("Data Source: World Bank - Population, total. www.worldbank.org (2021)")
 
-    ######################################
-    st.markdown("### Line Chart: Country Population Growth Since 2001")
-
+    # ----------------------- LINE CHART --------------------------
+    st.markdown("### Country Population Growth In The Last 20 Years")
     line_chart_data = pd.DataFrame(
         data={
             '2001': population_2001,
@@ -98,7 +99,5 @@ def app():
         },
         index=countries_list
     )
-
-    display_line_chart = st.checkbox('Display Country Population Growth Chart', value=True)
-    if display_line_chart:
-        st.line_chart(line_chart_data)
+    st.line_chart(line_chart_data)
+    st.info("Data Source: World Bank - Population, total. www.worldbank.org (2001, 2011, and 2021)")
