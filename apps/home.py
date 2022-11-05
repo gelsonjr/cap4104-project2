@@ -7,8 +7,14 @@ import json
 import altair as alt
 import matplotlib.pyplot as plt
 
-# API_URL = 'https://api.worldbank.org/v2/en/country/all/indicator/SP.POP.TOTL?format=json&date=2019:2021&per_page=798'
-API_URL = 'apps/data2021.json' # temporary, for tests
+API_URL_2021_DATA = 'apps/data2021.json'
+API_URL_2011_DATA = 'apps/data2011.json'
+API_URL_2001_DATA = 'apps/data2001.json'
+
+# API_URL = 'https://api.worldbank.org/v2/en/country/all/indicator/SP.POP.TOTL?format=json&per_page=300&date='
+# API_URL_2021_DATA = API_URL + '2021'
+# API_URL_2011_DATA = API_URL + '2011'
+# API_URL_2001_DATA = API_URL + '2001'
 
 # This method fetches data from World Bank API, and parses the JSON payload
 # to store only the relevant information (countries & populations)
@@ -54,14 +60,16 @@ def create_dataframe(api_data):
 
 
 def app():
-    api_data_2021 = fetch_api_data('apps/data2021.json')
-    api_data_2011 = fetch_api_data('apps/data2011.json')
-    api_data_2001 = fetch_api_data('apps/data2001.json')
-    df = create_dataframe(api_data_2021)
+    data_2001 = fetch_api_data(API_URL_2001_DATA)
+    data_2011 = fetch_api_data(API_URL_2011_DATA)
+    data_2021 = fetch_api_data(API_URL_2021_DATA)
 
-    dataList2021 = df['Country'].tolist()
-    dataList2011 = [api_data_2011[keys] for keys in dataList2021]
-    dataList2001 = [api_data_2001[keys] for keys in dataList2021]
+    df = create_dataframe(data_2021)
+
+    countries_list = df['Country'].tolist()
+    population_2001 = [data_2001[key] for key in countries_list]
+    population_2011 = [data_2011[key] for key in countries_list]
+    population_2021 = [data_2021[key] for key in countries_list]
 
     st.title('Home')
 
@@ -83,11 +91,8 @@ def app():
     # api_data_2001 = fetch_api_data('apps/data2001.json')
     # dataframe_2001 = create_dataframe(api_data_2001)
 
+    st.dataframe(df.style.format(subset=['Population'], formatter='{:,.2f}'))
 
-
-    st.dataframe(df.style.format(
-         precision=2, thousands=",", formatter={('Population'): '{:,.2f}'}
-     ))
     #st.dataframe(dataframe_2011)
     #st.dataframe(dataframe_2001)
     #st.dataframe(df2020)
@@ -101,17 +106,30 @@ def app():
 
     ######################################
     st.markdown("### Bar Chart: Country Population")
-    y = {
-        '2021': [1412000000, 1393000000, 331800000, 276000000, 225000000, 213999000, 211000000, 166000000, 143000000, 130000000]
-        # '2020': [1411000000, 1380000000, 331000000, 273000000, 220000000, 212000000, 206000000, 164000000, 144000000, 128000000],
-        # '2019': [1407000000, 1366000000, 328000000, 270000000, 216000000, 211000000, 200000000, 163000000, 144000000, 127000000]
-    } 
-    x = [
-        'China', 'India', 'United States', 'Indonesia', 'Pakistan',
-        'Brazil', 'Nigeria', 'Bangladesh', 'Russian Federation', 'Mexico'
-    ]
-    chart_data = pd.DataFrame(data=y, index=x)
-    st.bar_chart(chart_data)
+
+    x_axis = countries_list
+    y_axis = {
+        # 'Population in  2001': population_2001,
+        # 'Population in  2011': population_2011,
+        'Population in 2021': population_2021
+    }
+
+    # y = {
+    #     '2021': [1412000000, 1393000000, 331800000, 276000000, 225000000, 213999000, 211000000, 166000000, 143000000, 130000000]
+    #     # '2020': [1411000000, 1380000000, 331000000, 273000000, 220000000, 212000000, 206000000, 164000000, 144000000, 128000000],
+    #     # '2019': [1407000000, 1366000000, 328000000, 270000000, 216000000, 211000000, 200000000, 163000000, 144000000, 127000000]
+    # } 
+    # x = [
+    #     'China', 'India', 'United States', 'Indonesia', 'Pakistan',
+    #     'Brazil', 'Nigeria', 'Bangladesh', 'Russian Federation', 'Mexico'
+    # ]
+    # chart_data = pd.DataFrame(data=y_axis, index=x_axis)
+    bar_chart_data = pd.DataFrame(
+        data={'Population in 2021': population_2021},
+        index=countries_list
+    )
+    st.bar_chart(bar_chart_data)
+
     ######################################
     st.markdown("### Line Chart: Country Population Growth Since 2001")
 
@@ -120,7 +138,14 @@ def app():
         '2020': [1411000000, 1380000000, 331000000, 273000000, 220000000, 212000000, 206000000, 164000000, 144000000, 128000000],
         '2019': [1407000000, 1366000000, 328000000, 270000000, 216000000, 211000000, 200000000, 163000000, 144000000, 127000000]
     } 
-    line_chart_data = pd.DataFrame(data=z, index=x)
+    # line_chart_data = pd.DataFrame(data=z, index=x)
+    line_chart_data = pd.DataFrame(
+        data={
+            '2001': population_2001,
+            '2011': population_2011,
+            '2021': population_2021
+        },
+        index=countries_list)
     st.line_chart(line_chart_data)
 
 
